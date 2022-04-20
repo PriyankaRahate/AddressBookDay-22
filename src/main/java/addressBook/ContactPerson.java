@@ -30,4 +30,4 @@ String firstName;
 			System.out.println("Enter zip : ");
 			this.zip = scan.nextLong();
 		}
-	}
+}
