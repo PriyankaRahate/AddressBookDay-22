@@ -87,9 +87,23 @@ public class AddressBookSystem {
 
 			else {
 				System.out.println("Enter the valid command");
-			}
+			
 		}
-
+		
+		}
 	}
 
+	public void addMultipleContacts() {
+		System.out.println("Enter number of contacts to Add");
+		Scanner sc = null;
+		int number = sc.nextInt();
+		for (int i = 0; i < number; i++) {
+			addMultipleContacts();
+		}
+	}
 }
+
+
+
+
+	
