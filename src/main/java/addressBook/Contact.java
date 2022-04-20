@@ -1,12 +1,11 @@
 package addressBook;
 import java.util.Scanner;
-public class ContactPerson{
-String firstName;
+public class Contact {
+		String firstName;
 		String lastName;
 		String address;
 		String city;
 		String state;
-
 		String phoneNumber;
 		String email;
 		long zip;
@@ -30,4 +29,6 @@ String firstName;
 			System.out.println("Enter zip : ");
 			this.zip = scan.nextLong();
 		}
-}
+	}
+
+
