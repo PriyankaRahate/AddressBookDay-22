@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class AddressBook {
 
-	ArrayList<Contact> list = new ArrayList<Contact>();//// It represents a single diary where contact has been stored
-	String bookName; /// It represent the name of diary
+	ArrayList<Contact> list = new ArrayList<Contact>();
+	String bookName; 
 
 	void addContact() {
 		Contact contact = new Contact();
@@ -74,9 +74,7 @@ public class AddressBook {
 			System.out.println("Enter the name of Book you want to  access or add  or type 'city' to search persons by city or type 'state' to search by state or press 'q' to quit");
 			String bookName = scan3.nextLine();
 			if (bookName.equals("q")) {
-				// if (addressBook.list.size() > 0) {
-				// book.addBook(bookName, addressBook);
-				// }
+				
 				System.out.println("The program is closed");
 				break;
 			}
@@ -94,9 +92,8 @@ public class AddressBook {
 				shelf.showPersonsByState(placeName);
 				continue;
 			}
-			int result = shelf.checkBook(bookName);//// (It can return 0 or 1)It will return 1 if book exist b and break
-													//// down loop
-			int condition = 0;///// It will keep check on the addressbook created or not
+			int result = shelf.checkBook(bookName);
+			int condition = 0;
 			while (true) {
 				if (result == 1) {
 					break;

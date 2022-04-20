@@ -1,7 +1,7 @@
 package addressBook;
 import java.util.Scanner;
 public class Contact {
-    String firstName;
+	String firstName;
 	String lastName;
 	String address;
 	String city;
